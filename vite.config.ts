@@ -7,6 +7,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import vueDsfrPreset from './vue-dsfr-auto-import-preset.js'
 
+const isCypress = process.env.CYPRESS === 'true'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -22,7 +24,7 @@ export default defineConfig({
         'vue',
         'vue-router',
         'pinia',
-        'vitest',
+        ...(isCypress ? [] : ['vitest']),
         vueDsfrPreset,
       ],
       vueTemplate: true,

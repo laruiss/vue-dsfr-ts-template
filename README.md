@@ -1,4 +1,4 @@
-# live-coding-template
+# vue-dsfr-project
 
 Ce gabarit possède tous les outils configurés pour développer un projets Vue 3 et VueDsfr avec Vite.
 
@@ -23,7 +23,7 @@ Si le plugin TypeScript ne vous semble pas assez performant, Volar a aussi impl�
     2) Trouver `TypeScript and JavaScript Language Features`, cliquer avec le bouton droit et sélectionner `Disable (Workspace)`
 2. Recharger la fenêtre VSCode en lançant `Developer: Reload Window` depuis la palette de commandes.
 
-## Project Setup
+## Installer les dépendances
 
 ```sh
 npm install
@@ -63,7 +63,21 @@ npm run lint
 npm run test:unit
 ```
 
-### Lancer les Tests End-to-End Tests with [Cypress](https://www.cypress.io/)
+### Lancer les tests de composants avec [Cypress](https://www.cypress.io/)
+
+#### Avec une interface graphique
+
+```sh
+npm run test:ct
+```
+
+#### Sans interface graphique (pour la CI)
+
+```sh
+npm run test:ct:ci
+```
+
+### Lancer les Tests End-to-End Tests avec [Cypress](https://www.cypress.io/)
 
 ```sh
 npm run test:e2e:dev

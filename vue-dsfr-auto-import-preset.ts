@@ -72,4 +72,4 @@ export default {
     'DsfrRadioButtonSet',
     'DsfrRadioButton',
   ],
-}
+} as const

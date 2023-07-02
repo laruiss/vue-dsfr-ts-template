@@ -4,7 +4,7 @@
     "./auto-imports.d.ts",
     "./vue-dsfr-auto-import-preset.ts",
     "./env.d.ts",
-    "src/**/*",
+    "src/**/*.ts",
     "src/**/*.vue",
     "vite.config.*",
     "vitest.config.*",
