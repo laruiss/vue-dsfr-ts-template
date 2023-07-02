@@ -1,14 +1,21 @@
-import './assets/main.css'
+import '@gouvfr/dsfr/dist/dsfr.min.css'
+import '@gouvfr/dsfr/dist/utility/icons/icons.min.css'
+
+import '@gouvminint/vue-dsfr/styles'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+import VueDsfr from '@gouvminint/vue-dsfr'
+
 import App from './App.vue'
-import router from './router'
+import router from './router/index'
+import * as icons from './icons'
 
-const app = createApp(App)
+import './main.css'
 
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+createApp(App)
+  .use(createPinia())
+  .use(router)
+  .use(VueDsfr, { icons: Object.values(icons) })
+  .mount('#app')

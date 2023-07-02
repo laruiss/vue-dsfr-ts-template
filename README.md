@@ -1,8 +1,6 @@
 # live-coding-template
 
-Ce gabarit possède tous les outils configurés pour développer un projets Vue 3 avec Vite.
-
-Pour l’énoncé de l’exercice, Cf. [Exercice](./Exercice.md)
+Ce gabarit possède tous les outils configurés pour développer un projets Vue 3 et VueDsfr avec Vite.
 
 ## Configuration recommandée
 
